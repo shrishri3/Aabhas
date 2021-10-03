@@ -18,7 +18,7 @@ bg_camera.rotateX(-0.1);
 
 // sky
 var sky_sphere = new THREE.SphereGeometry( 99000, 200, 200 );
-var skyTexture = new THREE.TextureLoader().load( './assets/img/background-sky.jpg' );
+var skyTexture = new THREE.TextureLoader().load( 'assets/img/background-sky.jpg' );
 var sky_mat = new THREE.MeshBasicMaterial({map: skyTexture, side: THREE.BackSide});
 var sky_mesh = new THREE.Mesh( sky_sphere, sky_mat );
 bg_scene.add( sky_mesh );
@@ -27,7 +27,7 @@ sky_mesh.position.setY(1000);
 // ground
 var moon_sphere = new THREE.SphereGeometry( 300, 200, 200 );
 moon_sphere.rotateX( - Math.PI / 2 );
-var moonTexture = new THREE.TextureLoader().load( './assets/img/moon-surface.png' );
+var moonTexture = new THREE.TextureLoader().load( 'assets/img/moon-surface.png' );
 moonTexture.wrapS = moonTexture.wrapT = THREE.RepeatWrapping;
 moonTexture.repeat.set(15, 15);
 var moon_mat = new THREE.MeshBasicMaterial({map: moonTexture, side: THREE.FrontSide});
