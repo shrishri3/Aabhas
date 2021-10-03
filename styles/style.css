@@ -1,0 +1,222 @@
+html,
+body {
+    height: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    cursor: default;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+.viewport {
+    height: 100%;
+    width: 100%;
+}
+
+.panel {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 100;
+    /*background-color: rgba(200, 220, 255, 0.7);*/
+    background-color: rgba(131, 151, 184, 0.7);
+    border: 2px solid darkblue;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 3.2vh;
+}
+
+.bottom-panel {
+    width: 20%;
+    height: auto;
+    bottom: 25px;
+    left: 40%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.side-panel {
+    width: 22%;
+    height: 7%;
+    line-height: 100%;
+    top: 30px;
+    font-size: 4vh;
+}
+
+.side-panel p {
+    font-size: 2.7vh;
+}
+
+.side-panel p:hover {
+    font-weight: bold;
+    font-size: 2.8vh;
+    cursor: grab;
+}
+
+.left-panel {
+    width: 18%;
+    right: 15px;
+}
+
+h4.task-menu-header:hover {
+    cursor: grab;
+}
+
+.collapsed-items {
+    display: block;
+}
+
+.right-panel {
+    left: 15px;
+    height: 45vh;
+}
+
+.tool_menu_icon {
+    float: left;
+    height: 3vh;
+    margin-right: 5px;
+}
+
+.toolkit_icon {
+    height: 5vh;
+}
+
+.modal {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    width: 40%;
+    height: 75%;
+    top: 25px;
+    left: 30%;
+    z-index: 100;
+    border: 3px solid black;
+    color: black;
+}
+
+.experiment-modal {
+    display: none;
+    background-color: rgba(200, 220, 255, 0.7);
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 3.2vh;
+}
+
+.experiment-text.heading {
+    height: 5%;
+    font-weight: bold;
+}
+
+.experiment-text.intro {
+    height: 20%;
+    font-size: 2.3vh;
+}
+
+.experiment-text.result {
+    height: 25%;
+    font-size: 2.5vh;
+}
+
+.tool-picker {
+    height: 38%;
+}
+
+.tool_picker_option {
+    display: inline-block;
+    margin: 5px;
+    font-size: 2.3vh;
+    border: 2px solid darkblue;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.tool_picker_option p:hover {
+    font-weight: bold;
+    font-size: 2.4vh;
+    cursor: grab;
+}
+
+#scoop.tool_picker_option,
+#shovel.tool_picker_option,
+#sampler.tool_picker_option {
+    width: 43%;
+}
+
+#compartment.tool_picker_option,
+#penetrometer.tool_picker_option,
+#brush.tool_picker_option {
+    width: 33%;
+}
+
+#scongs.tool_picker_option {
+    width: 22%;
+}
+
+#drill.tool_picker_option {
+    width: 18%;
+}
+
+#shovel.tool_picker_option,
+#compartment.tool_picker_option,
+#drill.tool_picker_option,
+#penetrometer.tool_picker_option,
+#sampler.tool_picker_option {
+    float: left;
+}
+
+#scongs.tool_picker_option,
+#brush.tool_picker_option {
+    clear: left;
+}
+
+.exit-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 7%;
+    z-index: 1000;
+}
+
+.exit-icon:hover {
+    cursor: grab;
+}
+
+.model-viewport {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+}
+
+.model-controls-text {
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    padding: 5px;
+    bottom: 0%;
+    border-top: 3px solid black;
+    background-color: rgba(200, 220, 255, 0.7);
+    font-size: 2.5vh;
+}
+
+.fas {
+    float: right;
+}
+
+#backdrop-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}

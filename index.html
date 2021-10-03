@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Aabhas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="viewport">
+
+        <div id="backdrop-container"></div>
+
+        <!-- PANELS -->
+        <!-- console -->
+        <div class="panel bottom-panel">
+            <a href="knowmore.html">Know More</a>
+        </div>
+        <!-- tasks -->
+        <div class="panel side-panel left-panel">
+            <h4 class="task-menu-header"> Work<i class="fas fa-chevron-down"></i></h4>
+            <div class="collapsed-items"></div>
+        </div>
+        <!-- Tools -->
+        <div class="panel side-panel right-panel">
+            <img class="tool_menu_icon toolkit_icon" src="assets/img/toolkit-icon.png" />
+            <h4> Your Tools </h4>
+            <hr>
+            <div class="tool_menu_item" id="compartment">
+                <img class="tool_menu_icon" src="assets/img/toolkit-icon.png" />
+                <p>Compartment</p>
+            </div>
+            <div class="tool_menu_item" id="drill">
+                <img class="tool_menu_icon" src="assets/img/drill-icon.png" />
+                <p>Drill</p>
+            </div>
+            <div class="tool_menu_item" id="brush">
+                <img class="tool_menu_icon" src="assets/img/brush-icon.png" />
+                <p>Dust Brush</p>
+            </div>
+            <div class="tool_menu_item" id="scoop">
+                <img class="tool_menu_icon" src="assets/img/scoop-icon.png" />
+                <p>Large Rock Scoop</p>
+            </div>
+            <div class="tool_menu_item" id="penetrometer">
+                <img class="tool_menu_icon" src="assets/img/penetrometer-icon.png" />
+                <p>Penetrometer</p>
+            </div>
+            <div class="tool_menu_item" id="scongs">
+                <img class="tool_menu_icon" src="assets/img/scongs-icon.png" />
+                <p>Scongs</p>
+            </div>
+            <div class="tool_menu_item" id="shovel">
+                <img class="tool_menu_icon" src="assets/img/shovel-icon.png" />
+                <p>Small Rock Shovel</p>
+            </div>
+            <div class="tool_menu_item" id="sampler">
+                <img class="tool_menu_icon" src="assets/img/sampler-icon.png" />
+                <p>Surface Sampler</p>
+            </div>
+        </div>
+
+        <!-- EXPERIMENT MODAL -->
+        <div class="modal experiment-modal">
+            <img class="exit-icon" src="assets/img/exit-icon.png"></img>
+            <div class="experiment-text heading">
+                <p></p>
+            </div>
+            <br>
+            <div class="experiment-text intro">
+                <p></p>
+            </div>
+            <div class="tool-picker">
+                <div class="row1">
+                    <div class="tool_picker_option" id="scoop">
+                        <img class="tool_menu_icon" src="assets/img/scoop-icon.png" />
+                        <p>Large Rock Scoop</p>
+                    </div>
+                    <div class="tool_picker_option" id="shovel">
+                        <img class="tool_menu_icon" src="assets/img/shovel-icon.png" />
+                        <p>Small Rock Shovel</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="tool_picker_option" id="brush">
+                        <img class="tool_menu_icon" src="assets/img/brush-icon.png" />
+                        <p>Dust Brush</p>
+                    </div>
+                    <div class="tool_picker_option" id="compartment">
+                        <img class="tool_menu_icon" src="assets/img/toolkit-icon.png" />
+                        <p>Compartment</p>
+                    </div>
+                    <div class="tool_picker_option" id="drill">
+                        <img class="tool_menu_icon" src="assets/img/drill-icon.png" />
+                        <p>Drill</p>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="tool_picker_option" id="scongs">
+                        <img class="tool_menu_icon" src="assets/img/scongs-icon.png" />
+                        <p>Scongs</p>
+                    </div>
+                    <div class="tool_picker_option" id="penetrometer">
+                        <img class="tool_menu_icon" src="assets/img/penetrometer-icon.png" />
+                        <p>Penetrometer</p>
+                    </div>
+                    <div class="tool_picker_option" id="sampler">
+                        <img class="tool_menu_icon" src="assets/img/sampler-icon.png" />
+                        <p>Surface Sampler</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="experiment-text result">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- EXAMINE TOOL MODAL -->
+        <div class="modal model-container">
+            <img class="exit-icon" src="assets/img/exit-icon.png"></img>
+            <div class="model-viewport"></div>
+            <div class="model-controls-text">
+                <p>To have a closer look of the model, click and drag to spin it.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="scripts/three.js"></script>
+    <script src="scripts/GLTFLoader.js"></script>
+    <script src="scripts/TrackballControls.js"></script>
+    <script src="https://kit.fontawesome.com/64b5ee06ae.js" crossorigin="anonymous"></script>
+    <script src="scripts/jquery-3.5.1.slim.js"></script>
+    <script src="scripts/setScene.js"></script>
+    <script src="scripts/examineTool.js"></script>
+    <script src="scripts/expandTasks.js"></script>
+
+</body>
+
+</html>

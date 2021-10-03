@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parallax</title>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style1.css">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Aabhas</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a
+                    href="https://trek.nasa.gov/moon/#v=0.1&x=0&y=0&z=1&p=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A104903&d=&locale=&b=moon&e=-240.11718302095807%2C-109.86327920065797%2C240.11718302095807%2C109.86327920065797&sfz=&w=">GoToMoon</a>
+            </li>
+            <li><a
+                    href="https://trek.nasa.gov/mars/#v=0.1&x=0&y=0&z=1&p=urn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A104905&d=&locale=&b=mars&e=-240.11718302095807%2C-109.86327920065797%2C240.11718302095807%2C109.86327920065797&sfz=&w=">GoToMars</a>
+            </li>
+            <li><a href="index.html">Back&nbsp;<i class="fas fa-arrow-circle-left"></i></a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="assets/img/stars.png" id="stars">
+        <img src="assets/img/moon.png" id="moon">
+        <img src="assets/img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Explore Tools</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="assets/img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Tools Used</h2>
+        <hr><br>
+        <h4>Tools used to collect lunar rocks and soils:-</h4><br>
+        <h5>Contact Soil Sampling Device</h5>
+        <h5>Contingency soil sampler</h5>
+        <h5>Core Tube</h5>
+        <h5>Drill</h5>
+        <h5>Extension Handle</h5>
+        <h5>Hammer</h5>
+        <h5>Lunar rover soil sampler</h5>
+        <h5>Rake</h5>
+        <h5>Scoop</h5>
+        <h5>Tongs</h5>
+        <h5>Trenching tool</h5><br><br>
+        <h4>Tools used to support sample selection and documentation:-</h4><br>
+        <h5>Brush-scriber-lens</h5>
+        <h5>Gnomon</h5>
+        <h5>Weight scale</h5><br><br>
+        <h4>Tool carriers</h4><br><br>
+        <h4>Containers used to package rocks, soils and other samples on the moon</h4><br>
+        <h5>Apollo Lunar Sample Return Container (ALSRC)</h5>
+        <h5>Core Sample Vacuum Container (CSVC)</h5>
+        <h5>Documented sample bag</h5>
+        <h5>Gas Analysis Sample Container (GASC)</h5>
+        <h5>Lunar Environment Sample Container (LESC)</h5>
+        <h5>Magnetic Shield Sample Container (MSSC)</h5>
+        <h5>Organic sample monitor bag</h5>
+        <h5>Protective padded sample bag</h5>
+        <h5>Special Environment Sample Container (SESC)</h5><br><br>
+        <h4>Containers used to carry rocks and soils on the moon</h4><br>
+        <h5>Sample collection bag (SCB)</h5>
+        <h5>Weigh bag</h5>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value + 0.25 + 'px';
+            moon.style.top = value + 1.05 + 'px';
+            mountains_behind.style.top = value + 0.5 + 'px';
+            mountains_front.style.top = value + 0 + 'px';
+            text.style.marginRight = value + 4 + 'px';
+            text.style.marginTop = value + 1.5 + 'px';
+            btn.style.marginTop = value + 1.5 + 'px';
+            header.style.top = value + 0.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>
